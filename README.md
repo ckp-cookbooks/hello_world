@@ -20,4 +20,4 @@ To run locally, you need Vagrant 1.1.0 or greater installed with the Berkshelf p
 
 # Author
 
-Author:: CaryP (<cary@rightscale.com>)
+Author:: caryp (<cary@rightscale.com>)
