@@ -18,11 +18,12 @@ Vagrant::Config.run do |config|
 
   config.vm.host_name = "helloworld"
 
-  # config.vm.box = "rightscale-ubuntu-12.04"
-  # config.vm.box_url = "https://rightscale-vagrant-dev.s3.amazonaws.com/virtualbox/ubuntu/12.04/KB_Ubuntu_12.04_x64_v5.8.8_Vagrant_Dev3_214d23ada624b2.box"
+  # config.vm.box = "RightImage_CentOS_6.4_x64_v13.5.0.1"
+  # config.vm.box_url = "https://rightscale-vagrant.s3.amazonaws.com/virtualbox/centos/6.4/RightImage_CentOS_6.4_x64_v13.5.0.1.box"
 
-  config.vm.box = "rightimage-ubuntu-12.04-dev7"
-  config.vm.box_url = "https://rightscale-vagrant-dev.s3.amazonaws.com/virtualbox/ubuntu/12.04/RightImage_Ubuntu_12.04_x64_v5.8.8_Vagrant_Dev7_24070bea6d3bd0.box"
+  config.vm.box = "RightImage_Ubuntu_12.04_x64_v13.5.0.1"
+  config.vm.box_url = "https://rightscale-vagrant.s3.amazonaws.com/virtualbox/ubuntu/12.04/RightImage_Ubuntu_12.04_x64_v13.5.0.1.box"
+
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
