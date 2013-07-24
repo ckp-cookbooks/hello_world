@@ -1,24 +1,23 @@
 # hello_world cookbook
 
 Simple cookbook that supports using Berkshelf and Vagrant.  Good for verifying
-your development environment is setup correctly or for validating new vagrant
+your development environment is setup correctly for "[The Berkshelf Way](http://alluvium.com/blog/2013/05/03/the-application-cookbook-pattern-berkshelf-and-team-chef-workflow/)" or for validating new vagrant
 boxes.
 
 # Requirements
 
-To run locally, you need vagrant installed (see http://vagrantup.com/v1/docs/getting-started/index.html)
+To run locally, you need Vagrant 1.1.0 or greater installed with the Berkshelf plugin.  For installation information please see the "VAGRANT WITH BERKSHELF" section on [berkshelf.com](http://berkshelf.com/)
 
 # Usage
 
     cd hello_world
-    bundle install
-    bundle exec vagrant up
-    bundle exec vagrant ssh
+    vagrant up
+    vagrant ssh
 
 # Recipes
 
-hello_world::default - logs "Hello, World!" to chef log.
+`hello_world::default` - Logs "Hello, World!" to chef log. Yeah, stupid simple.
 
 # Author
 
-Author:: me
+Author:: CaryP (<cary@rightscale.com>)
