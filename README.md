@@ -18,6 +18,17 @@ To run locally, you need Vagrant 1.2.0 or greater installed with the Berkshelf p
 
 `hello_world::default` - Logs "Hello, World!" to chef log. Yeah, stupid simple.
 
+## Development
+
+Install the required development gems using:
+
+    bundle
+
+Then the available commands:
+
+    bundle exec thor list
+
+
 ## Contributing
 
 1. Fork it
