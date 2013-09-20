@@ -75,6 +75,9 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.json = {
+      :hello_world => {
+        :custom_name => "Dave"
+      },
       :mysql => {
         :server_root_password => 'rootpass',
         :server_debian_password => 'debpass',
@@ -83,7 +86,8 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-      "recipe[hello_world::default]"
+      "recipe[hello_world::default]",
+      "recipe[hello_world::custom]"
     ]
   end
 end

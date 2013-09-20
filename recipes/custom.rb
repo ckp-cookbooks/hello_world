@@ -16,6 +16,4 @@
 # limitations under the License.
 #
 
-log "Hello, World!"
-
-
+log "Hello, #{node['hello_world']['custom_name']}!"

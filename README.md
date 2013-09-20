@@ -17,6 +17,7 @@ To run locally, you need Vagrant 1.2.0 or greater installed with the Berkshelf p
 ## Recipes
 
 `hello_world::default` - Logs "Hello, World!" to chef log. Yeah, stupid simple.
+`hello_world::custom` - Logs "Hello, Default!" to chef log by default. 'Default' can be changed by overriding the `node['hello_world']['custom_name']` attribute.  This is a simple example of how to use an attribute to change recipe behavior.
 
 ## Development
 
