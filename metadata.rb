@@ -6,3 +6,4 @@ description      "Logs hello_world to the chef log"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.3"
 
+recipe "hello_world::default", "logs hello_world to Chef log."
